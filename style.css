@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'TitilliumWeb';
+    src: url(Fonts/TitilliumWeb/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+    font-family: 'Dimkin';
+    src: url(Fonts/Dimkin/Dimkin\ Regular.ttf);
+}
+body{
+    font-family: 'Dimkin';
+    color: #fff;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+main a{
+    color: #d0fcac;
+}
+header{
+    font-family: 'TitilliumWeb';
+    width: 100vw;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px black;
+    position: fixed;
+    top: 0;
+    font-size: 20px;
+}
+#flud-link{
+    margin-right: 6vw;
+}
+#market{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#master{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#flud{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-link{
+    margin-bottom: 5px;
+}
+div{
+    padding:0 20px;
+    line-height: 40px;
+    font-size: 34px;
+}
+.black-background{
+    background-color: rgba(0, 0, 0, 0.634);
+    border-radius: 20px;
+    padding: 30px;
+}
+main{
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+.pages{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+@media only screen and (max-width: 1080px) {
+    #market{
+        background: url(Background/cee9dee7ce9c7bb7f948276ef5912bb0.jpg) no-repeat center;
+        background-size: cover;
+    }
+    #master{
+        background: url(Background/7e9cd6ef3fd45cee42aa7c854b932517.jpg) no-repeat center;
+        background-size: cover;
+    }
+    #flud{
+        background: url(Background/6acdaf4d0f83e45c85aa866f1d988e3f.jpg) no-repeat ;
+        background-size: cover;
+    }
+}
+@media only screen and (min-width: 1081px) {
+    #market{
+        background: url(Background/imgonline-com-ua-Blur-Rm6quPzl6jCgt.jpg) no-repeat ;
+        background-size:cover;
+    }
+    #master{
+        background: url(Background/imgonline-com-ua-Blur-mxOKQO06Q6E.jpg) no-repeat center;
+        background-size:cover;
+    }
+    #flud{
+        background: url(Background/imgonline-com-ua-Blur-jkDKKhC4iVBYLbD.jpg) no-repeat center;
+        background-size:cover;
+    }
+}
